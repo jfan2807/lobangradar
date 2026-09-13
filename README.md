@@ -17,7 +17,7 @@
 LobangRadar continuously sweeps C2C marketplace listings, prices every item against
 international sold/active comparables and local brand-new retail prices, and streams
 buy/hold/avoid verdicts into a live trading-terminal UI. It turns a slow, manual
-"is this a good deal?" search into a real-time market feed — complete with a ticker
+"is this a good deal?" search into a real-time market feed, complete with a ticker
 tape, per-model analytics, watchlist fills, and scam detection.
 
 **Use case:** consumer deal discovery and price intelligence for the resale
@@ -60,7 +60,7 @@ electronics market; the same engine generalises to any C2C marketplace vertical.
 
 ### Deal Detail & Fair-Value Verdict
 ![Deal detail](./docs/assets/deal-detail.png)
-*The SECURITY DETAIL panel: listing photo, condition-adjusted fair-value band, % vs market verdict, and brand-new price reference — here a gaming PC flagged 52.4% under fair value.*
+*The SECURITY DETAIL panel: listing photo, condition-adjusted fair-value band, % vs market verdict, and brand-new price reference, here a gaming PC flagged 52.4% under fair value.*
 
 ### Market Board
 ![Market board](./docs/assets/market-board.png)
@@ -82,24 +82,24 @@ electronics market; the same engine generalises to any C2C marketplace vertical.
 
 ## Core Features
 
-1. **Condition-adjusted fair pricing** — every listing is canonicalised (brand,
+1. **Condition-adjusted fair pricing**: every listing is canonicalised (brand,
    model, generation, spec) and priced against recency-weighted sold and active
    comparables with outlier trimming, currency normalisation and per-condition
    adjustment; extreme or low-specificity matches are automatically suppressed
    rather than shown as false verdicts.
-2. **Market-terminal UX** — Bloomberg-inspired interaction model: numbered rows
+2. **Market-terminal UX**: Bloomberg-inspired interaction model with numbered rows
    navigable by `N <GO>`, a real command line (`SCAN`, `RUN <preset>`, symbol
    lookups), sortable columns, keyboard row navigation, density toggle, saved
    layouts and a scrolling price tape.
-3. **Transparent, self-correcting engine** — every verdict ships with its
+3. **Transparent, self-correcting engine**: every verdict ships with its
    comparables, confidence score and reasoning; a one-click *wrong match* control
    feeds a persistent blocklist the scanner honours on all future listings, and a
    built-in backtest endpoint scores historical fair values against later sales.
-4. **Resilient acquisition layer** — per-site browser isolation, adaptive
+4. **Resilient acquisition layer**: per-site browser isolation, adaptive
    backoff on challenges, layered result caching, retry queues, page-level change
    detection and a sweep-then-monitor loop that keeps polling for brand-new
    listings until stopped.
-5. **Buyer protection signals** — scam heuristics (too-good pricing,
+5. **Buyer protection signals**: scam heuristics (too-good pricing,
    off-platform contact bait, fresh seller accounts) flag suspect listings with
    explicit reasons instead of celebrating them as deals.
 
@@ -107,7 +107,7 @@ electronics market; the same engine generalises to any C2C marketplace vertical.
 
 ## License
 
-This is a public showcase repository — it contains the project README and
+This is a public showcase repository: it contains the project README and
 feature screenshots only. The source code is private; access can be arranged
 on request for portfolio review. All rights reserved.
 
